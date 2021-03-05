@@ -13,14 +13,14 @@ export default class Fish extends Sprite {
    * Changes the texture and the scale of @this
    */
   expand() {
-    // this.texture = Texture.from("bigFish");
+    this.texture = Texture.from("bigFish");
     gsap.to(this.scale, { x: 1.5, y: 1.5, duration: 1.2, ease: "elastic" });
   }
   /**
    * Changes the texture and the scale of @this
    */
   contract() {
-    // this.texture = Texture.from("smallFish");
+    this.texture = Texture.from("smallFish");
     gsap.to(this.scale, { x: 1, y: 1, duration: 1.2, ease: "elastic" });
   }
   /**
